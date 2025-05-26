@@ -10,7 +10,7 @@ EFFECT_PATH = ''
 INTERACTION_PATH = ''
 SAVE_PATH = ''
 
-MODEL = ['rrBLUP','BayesB','RKHS','RF','SVR','GAT']
+MODEL = ['rrBLUP','BayesB','RKHS','RF','SVR','GAT','Ensemble']
 
  # a list of colours corresponding to each keyword
 CYTOBAND_COLORMAP = {   
