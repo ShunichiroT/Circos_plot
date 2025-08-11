@@ -19,6 +19,8 @@ The comparison of the inferred genomic marker effects with known key genome regi
 
 - Result: folder used as storage for output files from this tool
 
+- environment.yml: a list of packages needed to implement this tool
+
 - genomic_prediction.py: code that bundles the genomic prediction models. This function is implemented through the "main" function.
 
 - circos_plot.py: code that generates a circos plot. This function is implemented through the "main" function.
