@@ -39,10 +39,10 @@ HPARAMETERS = {'rrBLUP': [10000, 2000],
 SCOPE = 'overall' #overall or population
 
 # File name containing the information of all markers
-MARKER_INFO = 'marker_info_Gibbs'
+MARKER_INFO = 'marker_info'
 
 # File name array containing the length of chromosome
-CHROMOSOME_INFO = ['Gibbs_chrom']
+CHROMOSOME_INFO = ['chrom']
 
 # File name(s) nested array containing key known gene locations. 
 # Each subarray indicates key gene file(s) for phenotype(s) in each population
