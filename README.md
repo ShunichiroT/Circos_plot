@@ -19,9 +19,9 @@ The comparison of the inferred genomic marker effects with known key genome regi
 
 - Result: folder used as storage for output files from this tool
 
-- genomic_prediction.py: code that bundles the genomic prediction models
+- genomic_prediction.py: code that bundles the genomic prediction models. This function is implemented through the "main" function.
 
-- circos_plot.py: code that generates a circos plot
+- circos_plot.py: code that generates a circos plot. This function is implemented through the "main" function.
 
 - main.py: the top function that manages the implementation of this tool. Users can modify the settings and hyperparameters through this function to optimise this tool based on their requirements. 
 
