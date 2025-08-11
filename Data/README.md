@@ -22,7 +22,7 @@ This folder contains example files to implement both genomic prediction and circ
 3. Marker information data
    - "marker_info.csv"
    - Columns:
-       - chromosome: belonging chromosome number ("chr"+NUMBER)
+       - chromosome: belonging chromosome number (NUMBER)
        - Start: the beginning location of the marker
        - Middel: the midpoint location of the marker
        - End: the end location of the marker
