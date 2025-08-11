@@ -36,4 +36,4 @@ This folder contains example files to implement both genomic prediction and circ
      - End: the end location of the marker
      - Name: name of the gene
      - Colour: the colour of the gene on a circos plot
- - Rows: markers
+ - Rows: genes
