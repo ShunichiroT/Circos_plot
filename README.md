@@ -14,7 +14,7 @@ The comparison of the inferred genomic marker effects with known key genome regi
    - Multilayer perceptron (MLP): PyTorch (Paszke et al., 2019) (v2.5.1) in Python
    - Graph attention network (GAT): PyTorch Geometric (Fey et al., 2019) (v.2.4.0) in Python 
   
-- Data: example data files to run this tool
+- Data: example data files based on the TeoNAM dataset (Chen et al., 2019) to run this tool
   - Details are explained in "README.md" in the Data folder
 
 - Result: folder used as storage for output files from this tool
