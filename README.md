@@ -1,29 +1,40 @@
 # Circos plots for genomic prediction
 This code is used for "Circos Plots for Genome Level Interpretation of Genomic Prediction Models" (https://www.biorxiv.org/content/10.1101/2025.05.25.656055v1).
 
-This code aims to visualise the effect of each genomic marker region and the interactions of these genomic marker regions for a target trait in crop breeding programs.
+This code aims to analyse the ensemble of multiple diverse genomic prediction models at the genome level in crop breeding programs.
+Circos plots are constructed for the analysis using the effect of each genomic marker region and the interactions of these genomic marker regions for a target trait.
 With a circos plot view, we can visually compare the inferred trait genetic architecture of each genomic prediction model to deepen the understanding of the predictive behaviour of each genomic prediction model at the genome level.
-The comparison of the inferred genomic marker effects with known key genome regions also enables the discovery of potential new genome regions that have not been well-investigated in the previous studies.
+The comparison of the inferred genomic marker effects with known key genome regions also enables the discovery of potential new genome regions that have not been well-investigated in previous studies.
 
 
 ## Description
-- Code: the source code that can generate a circos plot in the paper. To run this code, four types of data sources (chromosome length, marker interactions, genomic marker effects and key gene markers) are required. The Data folder contains example files of the four data types as described below. 
+- Model: the code for seven individual genomic prediction models (rrBLUP, BayesB, RKHS, RF, SVR, MLP and GAT) and the naive ensemble-average models is stored. These genomic prediction models are implemented through the "main" function.
+   - ridge regression best linear unbiased prediction (rrBLUP), BayesB and reproducing kernel Hilbert Space (RKHS): BGLR (Pérez and de Los Campos, 2014)
+   - Random forest (RF) and support vector regression (SVR): Sklearn (Pedregosa et al., 2012)
+   - Multilayer perceptron (MLP): PyTorch (Paszke et al., 2019)
+   - Graph attention network (GAT): PyTorch Geometric (Fey et al., 2019)
   
-- Data: example data files required to generate a circos plot
-  - Chromosome: the length of chromosomes. The folder contains the length of each chromosome across populations and each population (five populations in total) as an example
-    
-  - Interactions: the estimated pairwise interactions between genome regions. Interactions were inferred using Shapley scores (SHAP; Lundberg and Lee, 2017) from Random Forest (scikit-learn; Pedregosa et al., 2011) in this paper. The folder contains example interactions across populations and within each population
-    
-  - Key markers: the known genome regions that regulate flowering time in maize. In this paper, the QTL regions were extracted from Chen et al. (2019). For genes affecting leaf and shoot apical meristem (SAM), the gene information from Dong et al. (2012) was used. The folder contains the example location of each key genomic marker region across populations and within each population.
-    
-  - Marker effect: the inferred genomic marker effects from each genomic prediction model. The genomic marker effects were inferred from the interpretable methods used in Tomura et al. (2025b). The folder contains example genomic marker effects across populations and within each population
+- Data: example data files to run this tool
+  - Details are explained in "README.md" in the Data folder
+
+- Result: folder used as storage for output files from this tool
+
+- genomic_prediction.py: code that bundles the genomic prediction models
+
+- circos_plot.py: code that generates a circos plot
+
+- main.py: the top function that manages the implementation of this tool. Users can modify the settings and hyperparameters through this function to optimise this tool based on their requirements. 
 
 ## References
 Chen Q, Yang CJ, York AM, Xue W, Daskalska LL, DeValk CA, Krueger KW, Lawton SB, Spiegelberg BG, Schnell JM et al. 2019. Teonam: A nested association mapping population for domestication and agronomic trait analysis in maize. Genetics. 213:1065–1078. 
 
 Dong Z, Danilevskaya O, Abadie T, Messina C, Coles N, Cooper M. 2012. A gene regulatory network model for floral transition of the shoot apex in maize and its dynamic modeling. PLoS ONE. 
 
+Fey M, Lenssen JE. 2019. Fast graph representation learning with pytorch geometric. arXiv preprint arXiv:1903.02428. https://doi.org/10.48550/arXiv.1903.02428.
+
 Lundberg SM, Lee SI. 2017. A unified approach to interpreting model predictions. Advances in neural information processing systems. 30.
+
+Paszke A, Gross S, Massa F, Lerer A, Bradbury J, Chillemi G, Antiga L, Desmaison A, Tejani A, Chilamkurthy S et al . 2019. Pytorch: An imperative style, high-performance deep learning library. Advances in Neural Information Processing Systems. 32.
 
 F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay. Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12:2825–2830, 2011.
 
