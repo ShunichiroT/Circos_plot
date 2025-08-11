@@ -30,7 +30,7 @@ Chen Q, Yang CJ, York AM, Xue W, Daskalska LL, DeValk CA, Krueger KW, Lawton SB,
 
 Dong Z, Danilevskaya O, Abadie T, Messina C, Coles N, Cooper M. 2012. A gene regulatory network model for floral transition of the shoot apex in maize and its dynamic modeling. PLoS ONE. 
 
-Fey M, Lenssen JE. 2019. Fast graph representation learning with pytorch geometric. arXiv preprint arXiv:1903.02428. https://doi.org/10.48550/arXiv.1903.02428.
+Fey M, Lenssen JE. 2019. Fast graph representation learning with pytorch geometric. arXiv preprint arXiv:1903.02428.
 
 Lundberg SM, Lee SI. 2017. A unified approach to interpreting model predictions. Advances in neural information processing systems. 30.
 
