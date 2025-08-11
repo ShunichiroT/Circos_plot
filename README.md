@@ -23,7 +23,18 @@ The comparison of the inferred genomic marker effects with known key genome regi
 
 - circos_plot.py: code that generates a circos plot. This function is implemented through the "main" function.
 
-- main.py: the top function that manages the implementation of this tool. Users can modify the settings and hyperparameters through this function to optimise this tool based on their requirements. 
+- main.py: the top function that manages the implementation of this tool. Users can modify the settings and hyperparameters through this function to optimise this tool based on their requirements.
+
+## Procedure
+1. Download this tool
+2. Develop an environment using the "environment.yml" file
+   - It is recommended to use Anaconda for the environment development
+3. Prepare the relevant data in the specified format
+   - Check "README.md" in the Data folder for the format details
+4. Adjust settings and hyperparameters in the "main" function
+   - Check the explanations in the code for the details 
+6. Implement the code
+7. Check and analyse the generated output files in the Result folder 
 
 ## References
 Chen Q, Yang CJ, York AM, Xue W, Daskalska LL, DeValk CA, Krueger KW, Lawton SB, Spiegelberg BG, Schnell JM et al. 2019. Teonam: A nested association mapping population for domestication and agronomic trait analysis in maize. Genetics. 213:1065–1078. 
