@@ -19,7 +19,9 @@ The comparison of the inferred genomic marker effects with known key genome regi
 
 - Result: folder used as storage for output files from this tool
 
-- environment.yml: a list of packages needed to implement this tool
+- environment_windows.yml: a list of packages needed to implement this tool in Windows
+
+- environment_linux.yml: a list of packages needed to implement this tool in Linux
 
 - genomic_prediction.py: code that bundles the genomic prediction models. This function is implemented through the "main" function.
 
