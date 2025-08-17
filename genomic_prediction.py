@@ -205,7 +205,7 @@ def GP(DATA_NAME, MODEL, PHENOTYPE, POPULATION, RATIO, SAMPLE_NUM, HPARAMETERS, 
         interactions.to_csv('./Result/Interaction.csv', index=False)
     
     # Store violin plots
-    metric_plot(record, MODEL)
+    metric_plot(record.copy(), MODEL)
     
     return record, result_train, result_test, effect, interactions    
     
