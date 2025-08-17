@@ -1,4 +1,4 @@
-name: GP
+name: EasiGP
 channels:
   - pytorch
   - anaconda
@@ -17,10 +17,8 @@ dependencies:
   - attrs=25.3.0=pyh71513ae_0
   - autopep8=2.0.4=pyhd3eb1b0_0
   - babel=2.17.0=pyhd8ed1ab_0
-  - bayesian-optimization=3.0.1=pyhd8ed1ab_0
   - beautifulsoup4=4.13.3=pyha770c72_0
   - binaryornot=0.4.4=pyhd3eb1b0_1
-  - biopython=1.85=py39ha55e580_1
   - blas=1.0=mkl
   - bleach=6.2.0=pyh29332c3_4
   - bleach-with-css=6.2.0=h82add2a_4
@@ -31,18 +29,16 @@ dependencies:
   - cached-property=1.5.2=hd8ed1ab_1
   - cached_property=1.5.2=pyha770c72_1
   - cairo=1.16.0=he04af86_2
-  - certifi=2025.7.14=py39haa95532_0
+  - certifi=2025.1.31=py39haa95532_0
   - cffi=1.17.1=py39ha55e580_0
   - charset-normalizer=3.4.1=pyhd8ed1ab_0
   - click=8.1.8=py39haa95532_0
   - cloudpickle=3.0.0=py39haa95532_0
   - colorama=0.4.6=py39haa95532_0
   - comm=0.2.2=pyhd8ed1ab_1
-  - contourpy=1.2.1=py39h214f63a_1
   - cookiecutter=2.6.0=py39haa95532_0
   - cpp-expected=1.1.0=h214f63a_0
   - cpython=3.9.22=py39hd8ed1ab_0
-  - cycler=0.11.0=pyhd3eb1b0_0
   - debugpy=1.8.14=py39ha51f57c_0
   - decorator=5.2.1=pyhd8ed1ab_0
   - defusedxml=0.7.1=pyhd8ed1ab_0
@@ -56,15 +52,12 @@ dependencies:
   - font-ttf-ubuntu=0.83=h77eed37_3
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
-  - fonttools=4.55.3=py39h827c3e9_0
   - fqdn=1.5.1=pyhd8ed1ab_1
   - freetype=2.13.3=h0620614_0
   - fribidi=1.0.10=h8d14728_0
   - frozenlist=1.5.0=py39h827c3e9_0
   - glib=2.78.4=hd77b12b_0
   - glib-tools=2.78.4=hd77b12b_0
-  - gmp=6.3.0=h537511b_0
-  - gmpy2=2.2.1=py39h827c3e9_0
   - graphite2=1.3.14=hd77b12b_1
   - h11=0.14.0=pyhd8ed1ab_1
   - h2=4.2.0=pyhd8ed1ab_0
@@ -78,7 +71,6 @@ dependencies:
   - idna=3.10=pyhd8ed1ab_1
   - imagesize=1.4.1=py39haa95532_0
   - importlib-metadata=8.6.1=pyha770c72_0
-  - importlib-resources=6.5.2=pyhd8ed1ab_0
   - importlib_resources=6.5.2=pyhd8ed1ab_0
   - intel-openmp=2023.1.0=h59b6b97_46320
   - intervaltree=3.1.0=pyhd3eb1b0_0
@@ -104,7 +96,6 @@ dependencies:
   - jupyterlab=4.4.0=pyhd8ed1ab_0
   - jupyterlab_pygments=0.3.0=pyhd8ed1ab_2
   - jupyterlab_server=2.27.3=pyhd8ed1ab_1
-  - kiwisolver=1.4.4=py39hd77b12b_0
   - krb5=1.20.1=h5b6d351_0
   - lcms2=2.12=h83e58a3_0
   - lerc=4.0.0=h63175ca_0
@@ -122,7 +113,6 @@ dependencies:
   - libjpeg-turbo=2.0.0=h196d8e1_0
   - liblapack=3.9.0=8_h719fc58_netlib
   - liblzma=5.8.1=h2466b09_0
-  - liblzma-devel=5.8.1=h2466b09_0
   - libmamba=2.0.8=h00a3e12_2
   - libpng=1.6.39=h8cc25b3_0
   - libpq=17.4=h70ee33d_0
@@ -179,8 +169,6 @@ dependencies:
   - mkl-service=2.4.0=py39h827c3e9_2
   - mkl_fft=1.3.11=py39h827c3e9_0
   - mkl_random=1.2.8=py39hc64d2fc_0
-  - mpc=1.3.1=h827c3e9_0
-  - mpfr=4.2.1=h56c3642_0
   - mpmath=1.3.0=pyhd8ed1ab_1
   - msys2-conda-epoch=20160418=1
   - mypy_extensions=1.0.0=py39haa95532_0
@@ -196,8 +184,10 @@ dependencies:
   - notebook-shim=0.2.4=pyhd8ed1ab_1
   - numba=0.60.0=py39h5da7b33_1
   - numexpr=2.10.1=py39h4cd664f_0
+  - numpy=2.0.2=py39h055cbcc_0
+  - numpy-base=2.0.2=py39h65a83cf_0
   - openjpeg=2.5.2=hae555c5_0
-  - openssl=3.5.0=ha4e3fda_1
+  - openssl=3.5.0=ha4e3fda_0
   - overrides=7.7.0=pyhd8ed1ab_1
   - packaging=24.2=py39haa95532_0
   - pandas=2.2.3=py39h5da7b33_0
@@ -206,6 +196,7 @@ dependencies:
   - parso=0.8.4=pyhd8ed1ab_1
   - pcre2=10.42=h0ff8eda_1
   - pickleshare=0.7.5=pyhd8ed1ab_1004
+  - pillow=11.0.0=py39hb5480e2_0
   - pip=25.0=py39haa95532_0
   - pixman=0.44.2=had0cd8c_0
   - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_2
@@ -220,7 +211,6 @@ dependencies:
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.3=pyhd8ed1ab_1
   - pybind11-abi=5=hd3eb1b0_0
-  - pycirclize=1.9.1=pyhd8ed1ab_0
   - pycodestyle=2.12.1=py39haa95532_0
   - pycparser=2.22=pyh29332c3_1
   - pydocstyle=6.3.0=py39haa95532_0
@@ -228,7 +218,6 @@ dependencies:
   - pygments=2.19.1=pyhd8ed1ab_0
   - pyjwt=2.10.1=py39haa95532_0
   - pynacl=1.5.0=py39h7edc060_1
-  - pyparsing=3.2.0=py39haa95532_0
   - pyqt=5.15.10=py39h5da7b33_1
   - pysocks=1.7.1=pyh09c184e_7
   - python=3.9.21=h8205438_1
@@ -249,7 +238,6 @@ dependencies:
   - pyyaml=6.0.2=py39hf73967f_2
   - pyzmq=26.2.0=py39h5da7b33_0
   - qdarkstyle=3.2.3=pyhd3eb1b0_0
-  - qhull=2020.2=h59b6b97_2
   - qt-main=5.15.2=h19c9488_12
   - qt-webengine=5.15.9=h5bd16bc_7
   - qtconsole=5.6.1=py39haa95532_0
@@ -460,7 +448,6 @@ dependencies:
   - rpy2=3.5.11=py39r41hd2bd0d5_3
   - scikit-learn=1.6.1=py39h585ebfc_0
   - scipy=1.13.1=py39h8640f81_1
-  - seaborn=0.13.2=py39haa95532_3
   - send2trash=1.8.3=pyh5737063_1
   - setuptools=72.1.0=py39haa95532_0
   - shap=0.47.1=cpu_py39he0d386f_0
@@ -480,6 +467,7 @@ dependencies:
   - sqlite=3.45.3=h2bbff1b_0
   - stack_data=0.6.3=pyhd8ed1ab_1
   - superqt=0.7.3=py39hbc747e5_0
+  - sympy=1.13.3=pyh04b8f61_5
   - tabulate=0.9.0=py39haa95532_0
   - tbb=2021.8.0=h59b6b97_0
   - terminado=0.18.1=pyh5737063_0
@@ -504,7 +492,6 @@ dependencies:
   - tzlocal=5.2=py39haa95532_0
   - ucrt=10.0.20348.0=haa95532_0
   - ujson=5.10.0=py39h5da7b33_1
-  - unicodedata2=15.1.0=py39h827c3e9_1
   - unidecode=1.3.8=py39haa95532_0
   - uri-template=1.3.0=pyhd8ed1ab_1
   - urllib3=2.4.0=pyhd8ed1ab_0
@@ -520,8 +507,7 @@ dependencies:
   - winpty=0.4.3=4
   - xorg-libxau=1.0.11=hcd874cb_0
   - xorg-libxdmcp=1.1.3=hcd874cb_0
-  - xz=5.8.1=h208afaa_0
-  - xz-tools=5.8.1=h2466b09_0
+  - xz=5.6.4=h4754444_1
   - yaml=0.2.5=h8ffe710_2
   - yaml-cpp=0.8.0=hd77b12b_1
   - zeromq=4.3.5=hd77b12b_0
@@ -538,7 +524,6 @@ dependencies:
       - atomicwrites==1.4.1
       - backports-tarfile==1.2.0
       - black==25.1.0
-      - captum==0.8.0
       - chardet==5.2.0
       - cryptography==44.0.2
       - deprecated==1.2.18
@@ -547,7 +532,6 @@ dependencies:
       - docstring-to-markdown==0.16
       - docutils==0.21.2
       - flake8==7.1.2
-      - fsspec==2025.7.0
       - inflection==0.5.1
       - jaraco-classes==3.4.0
       - jaraco-context==6.0.1
@@ -555,16 +539,12 @@ dependencies:
       - jellyfish==1.2.0
       - keyring==25.6.0
       - markdown-it-py==3.0.0
-      - matplotlib==3.9.4
       - mdurl==0.1.2
       - more-itertools==10.6.0
       - multidict==6.4.3
-      - numpy==1.26.4
       - numpydoc==1.8.0
       - pathspec==0.12.1
       - pexpect==4.9.0
-      - pillow==10.0.0
-      - pyg-lib==0.4.0+pt25cpu
       - pygithub==2.6.1
       - pylint==3.3.6
       - pylint-venv==3.0.4
@@ -588,15 +568,9 @@ dependencies:
       - sphinxcontrib-htmlhelp==2.1.0
       - sphinxcontrib-qthelp==2.0.0
       - sphinxcontrib-serializinghtml==2.0.0
-      - sympy==1.13.1
-      - torch-cluster==1.6.3+pt25cpu
-      - torch-geometric==2.6.1
-      - torch-scatter==2.1.2+pt25cpu
-      - torch-sparse==0.6.18+pt25cpu
-      - torch-spline-conv==1.2.2+pt25cpu
       - watchdog==6.0.0
       - whatthepatch==1.0.7
       - wrapt==1.17.2
       - yapf==0.43.0
       - yarl==1.19.0
-prefix: C:\Anaconda3\envs\GP
+prefix: C:\Anaconda3\envs\EasiGP
