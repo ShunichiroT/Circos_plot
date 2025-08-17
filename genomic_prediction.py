@@ -2,13 +2,11 @@ import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
 
-os.chdir('./models')
-from RF import *
-from SVR import *
-from MLP import *
-from GAT import *
-from ensemble import *
-os.chdir('..')
+from models.RF import *
+from models.SVR import *
+from models.MLP import *
+from models.GAT import *
+from models.ensemble import *
 
 def metric_plot(record, MODEL):
     
@@ -48,17 +46,13 @@ def GP(DATA_NAME, MODEL, PHENOTYPE, POPULATION, RATIO, SAMPLE_NUM, HPARAMETERS, 
     from rpy2.robjects import pandas2ri
     pandas2ri.activate()
     
-    os.chdir('./models')
-
     r_source = robjects.r['source']
-    r_source('rrBLUP.R')
+    r_source('./models/rrBLUP.R')
     rrBLUP = robjects.globalenv['rrBLUP']
-    r_source('BayesB.R')
+    r_source('./models/BayesB.R')
     BayesB = robjects.globalenv['BayesB']
-    r_source('RKHS.R')
+    r_source('./models/RKHS.R')
     RKHS = robjects.globalenv['RKHS']
-
-    os.chdir('..')
     
     # Read genotype and phenotype data
     data_original = pd.read_csv('./Data/'+DATA_NAME+'.csv')
@@ -211,7 +205,7 @@ def GP(DATA_NAME, MODEL, PHENOTYPE, POPULATION, RATIO, SAMPLE_NUM, HPARAMETERS, 
         interactions.to_csv('./Result/Interaction.csv', index=False)
     
     # Store violin plots
-    metric_plot(record, MODEL)
+    metric_plot(record.copy(), MODEL)
     
     return record, result_train, result_test, effect, interactions    
     
