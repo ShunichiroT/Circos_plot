@@ -9,10 +9,10 @@ The comparison of the inferred genomic marker effects with known key genome regi
 
 ## Description
 - Model: the code for seven individual genomic prediction models (rrBLUP, BayesB, RKHS, RF, SVR, MLP and GAT) and the naive ensemble-average models is stored. These genomic prediction models are implemented through the "main" function.
-   - ridge regression best linear unbiased prediction (rrBLUP), BayesB and reproducing kernel Hilbert Space (RKHS): BGLR (Pérez and de Los Campos, 2014) in R (v1.1.4)
-   - Random forest (RF) and support vector regression (SVR): Sklearn (Pedregosa et al., 2012) (v1.2.2) in Python (v3.11.10) 
-   - Multilayer perceptron (MLP): PyTorch (Paszke et al., 2019) (v2.5.1) in Python
-   - Graph attention network (GAT): PyTorch Geometric (Fey et al., 2019) (v.2.4.0) in Python 
+   - ridge regression best linear unbiased prediction (rrBLUP), BayesB and reproducing kernel Hilbert Space (RKHS): BGLR (Pérez and de Los Campos, 2014) in R
+   - Random forest (RF) and support vector regression (SVR): Sklearn (Pedregosa et al., 2012) in Python
+   - Multilayer perceptron (MLP): PyTorch (Paszke et al., 2019) in Python
+   - Graph attention network (GAT): PyTorch Geometric (Fey et al., 2019) in Python 
   
 - Data: example data files based on the TeoNAM dataset (Chen et al., 2019) to run this tool
   - Details are explained in "README.md" in the Data folder
