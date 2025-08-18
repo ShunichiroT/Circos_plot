@@ -34,7 +34,7 @@ This folder contains two folders containing example files to implement both geno
    - Rows: markers
 
  4. Key gene marker data
-   - TeoNAM folder: "QTL.tsv","QTL_W22TIL01.tsv","QTL_W22TIL03.tsv","QTL_W22TIL11.tsv","QTL_W22TIL14.tsv","QTL_W22TIL25.tsv", "Genes_leaf.tsv", "Genes_leaf_W22TIL01.tsv","Genes_leaf_W22TIL03.tsv","Genes_leaf_W22TIL11.tsv","Genes_leaf_W22TIL14.tsv","Genes_leaf_W22TIL25.tsv", "Genes_SAM.tsv", "Genes_SAM_W22TIL01.tsv","Genes_SAM_W22TIL03.tsv","Genes_SAM_W22TIL11.tsv","Genes_SAM_W22TIL14.tsv","Genes_SAM_W22TIL25.tsv"
+   - TeoNAM folder: "QTL.tsv","QTL_W22TIL01.tsv","QTL_W22TIL03.tsv","QTL_W22TIL11.tsv","QTL_W22TIL14.tsv","QTL_W22TIL25.tsv", "Genes_leaf.tsv", "Genes_leaf_W22TIL01.tsv","Genes_leaf_W22TIL03.tsv","Genes_leaf_W22TIL11.tsv","Genes_leaf_W22TIL14.tsv","Genes_leaf_W22TIL25.tsv", "Genes_SAM.tsv", "Genes_SAM_W22TIL01.tsv","Genes_SAM_W22TIL03.tsv","Genes_SAM_W22TIL11.tsv","Genes_SAM_W22TIL14.tsv" and "Genes_SAM_W22TIL25.tsv"
    - Arabidopsis folder: "Arabidopsis_branching.tsv" and "Arabidopsis_flowering.tsv"
    - Columns:
      - chromosome: belonging chromosome number ("chr"+NUMBER)
