@@ -1,7 +1,7 @@
 ## Description
 This folder contains two folders containing example files to implement both genomic prediction and circos plot generation functions.
-   - TeoNAM folder contains formatted example data from the TeoNAM dataset (Chen et al.,2019), accompanied by key genomic marker information (Dong et al., 2012)
-   - Arabidopsis folder contains formatted example data from the 1001 Genomes Consortium (2016), Grimm et al. (2017) and Gibbs et al. (2025), accompanied by key genomic marker information (Arabidopsis Information Resource (TAIR); https://www.arabidopsis.org/)
+   - TeoNAM folder contains formatted example data from the TeoNAM dataset (Chen et al.,2019), accompanied by key genomic marker information for flowering (Dong et al., 2012)
+   - Arabidopsis folder contains formatted example data from the 1001 Genomes Consortium (2016), Grimm et al. (2017) and Gibbs et al. (2025), accompanied by key genomic marker information for flowering and branching (Arabidopsis Information Resource (TAIR); https://www.arabidopsis.org/)
 
 1. Genotype & phenotype data
   - TeoNAM folder: "TeoNAM_dataset.zip", "W22TIL01.csv", "W22TIL03.csv", "W22TIL11.csv", "W22TIL14.csv" and "W22TIL25.csv"
