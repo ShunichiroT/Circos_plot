@@ -1,5 +1,5 @@
 # Ensemble AnalySis with Interpretable Genomic Prediction (EasiGP): Computational Tool for Interpreting Ensembles of Genomic Prediction Models
-This code is used for "Circos Plots for Ensemble AnalySis with Interpretable Genomic Prediction (EasiGP): Computational Tool for Interpreting Ensembles of Genomic Prediction Models" (https://www.biorxiv.org/content/10.1101/2025.05.25.656055v1).
+This code is used for "Circos Plots for Ensemble AnalySis with Interpretable Genomic Prediction (EasiGP): Computational Tool for Interpreting Ensembles of Genomic Prediction Models".
 
 This code aims to analyse the ensemble of multiple diverse genomic prediction models at the genome level in crop breeding programs.
 Circos plots are constructed for the analysis using the effect of each genomic marker region and the interactions of these genomic marker regions for a target trait.
